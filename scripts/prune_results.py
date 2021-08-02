@@ -48,12 +48,18 @@ def main():
     drug_et = etree.parse(xml_directory/"medication_atccodes_ontology.xml")
     res_df = pd.read_csv(input_directory/'allcombinations_atccodes_results.tsv', sep='\t')
     res_othermedication = pd.read_csv(input_directory/'allcombinations_othermedications_results.tsv', sep='\t')
-    res_df = res_df[res_df['Disease_number_within_Drug_Use'] > 10]
+    res_df = res_df[res_df['Disease_number_within_Drug_Use'] > 5]
     res_df['corrected_df'] = multipletests(res_df['p'], method='fdr_bh')[1]
     sig_res_df = res_df[res_df['corrected_df'] < 0.05]
     res_othermedication = res_othermedication[res_othermedication['Disease_number_within_Drug_Use'] > 10]
     res_othermedication['corrected_df'] = multipletests(res_othermedication['p'], method='fdr_bh')[1]
     sig_res_othermedication = res_othermedication[res_othermedication['corrected_df'] < 0.05]
+    # save unpruned significant results
+    sig_res_df.sort_values(by=['corrected_p']).to_csv('../results/significant_atccodes_results.tsv',
+                                                      sep='\t')
+    sig_res_othermedication.sort_values(by=['corrected_p']).to_csv(
+        '../results/significant_othermedications_results.tsv',
+        sep='\t')
     # add the most upper parent to each medication & anomaly
     disease_root = disease_et.getroot()
     parent_list = [item.tag for item in disease_root.getchildren()]
