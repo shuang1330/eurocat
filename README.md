@@ -5,6 +5,8 @@ This repository has scripts & notebooks for
 
 
 Below are instructions to use the scripts in scripts/ directory:
-for step 1): ```scripts/create_all_chi_square_files.py --inputsav /path/to/input/sav/file --output_directory /path/to/save/output/files```
-for step 2): ```scripts/create_xml_files.py --output_directory /path/to/save/xml/files```
-for step 3): ```scripts/prune_results.py --input_directory /path/to/directory/where/results/in/step1/are/in --xml_directory /path/to/xml/directory --output_directory /path/to/save/pruned/results```
+* ```scripts/create_all_chi_square_files.py --inputsav /path/to/input/sav/file --output_directory /path/to/save/output/files```
+
+* ```scripts/create_xml_files.py --output_directory /path/to/save/xml/files```
+
+* ```scripts/prune_results.py --input_directory /path/to/directory/where/results/in/step1/are/in --xml_directory /path/to/xml/directory --output_directory /path/to/save/pruned/results```
