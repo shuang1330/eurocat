@@ -6,3 +6,4 @@ tqdm=4.45.0=pyh9f0ad1d_1
 statsmodels=0.11.1=py37h8f50634_1
 lxml=4.5.0=py37hefd8a0e_0
 argparse=1.4.0=pypi_0
+xlsxwriter=1.4.5=pypi_0
