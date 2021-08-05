@@ -24,17 +24,16 @@
     </earfaceneck>
   </earanom>
   <heartdef>
-    <severechd>
-      <comarttrun/>
+    <severechd/>
+    <comarttrun/>
+    <alltranspos>
       <dtranspos/>
-      <alltranspos/>
-      <DORV/>
-      <fallot/>
-      <singvent/>
-    </severechd>
-    <ASD>
-      <AVSD/>
-    </ASD>
+    </alltranspos>
+    <DORV/>
+    <fallot/>
+    <singvent/>
+    <ASD/>
+    <AVSD/>
     <VSD>
       <mVSD/>
       <pVSD/>
@@ -60,14 +59,16 @@
   </respirat>
   <ofclefts>
     <cpalate/>
-    <cleftlip/>
-    <clippal/>
-    <liporpal/>
+    <liporpal>
+      <clippal/>
+      <cleftlip/>
+    </liporpal>
   </ofclefts>
   <digestiv>
     <oesoph/>
-    <smintest/>
-    <atrsteduode/>
+    <smintest>
+      <atrsteduode/>
+    </smintest>
     <anorecta/>
     <hirschpr/>
     <bileatre/>
@@ -85,25 +86,24 @@
       <epispadi/>
       <exbladder/>
     </bladepi>
-    <bilrenage>
-      <renaldys>
-        <multicyst/>
-      </renaldys>
-      <hydronep/>
-      <prunebel/>
-      <posturvalve/>
-      <uretatrsten/>
-      <megauret/>
-      <VUR/>
-      <horsshoe/>
-    </bilrenage>
+    <bilrenage/>
+    <renaldys>
+      <multicyst/>
+    </renaldys>
+    <hydronep/>
+    <prunebel/>
+    <posturvalve/>
+    <uretatrsten/>
+    <megauret/>
+    <VUR/>
+    <horsshoe/>
   </urinary>
   <limbanom>
     <reddefec>
       <reddefup/>
       <reddeflo/>
+      <limbabs/>
     </reddefec>
-    <limbabs/>
     <clubft/>
     <hip/>
     <polydact>
@@ -132,9 +132,10 @@
   <amniotic/>
   <inversus/>
   <skindis/>
-  <terasyn/>
-  <fetalalcohol/>
-  <valproate/>
+  <terasyn>
+    <fetalalcohol/>
+    <valproate/>
+  </terasyn>
   <MCA/>
   <hydrops/>
 </root>
